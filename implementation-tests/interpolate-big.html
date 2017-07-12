@@ -1,0 +1,17 @@
+<canvas id="c2" width=512 height=512>
+</canvas>
+<canvas id="c3" width=16384 height=16384>
+</canvas>
+<img src="interpolate.png" width=512 style="display:none">
+<script>
+	onload = function() {
+	function get(name) { return document.querySelectorAll(name)[0]; }
+	c2 = get("#c2").getContext("2d");
+	img = get("img")
+	c2.drawImage(img,0,0,512,512);
+
+	c3 = get("#c3").getContext("2d");
+	img = get("img")
+	c3.drawImage(img,0,0,512,512);
+}
+</script>

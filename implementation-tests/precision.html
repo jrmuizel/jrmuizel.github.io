@@ -1,0 +1,27 @@
+<canvas id="canvas" style="display:none"></canvas>
+	<script>
+try {
+	  var canvas = document.getElementById( "canvas" );
+	  var gl = canvas.getContext( 'experimental-webgl' );
+	 
+	  gl.clearColor( 1,0,0,1 );
+	  gl.clear( gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT );
+	  function printPrecision(shader, type) {
+		  document.write(shader + " " + type + "<br>");
+		  var format = gl.getShaderPrecisionFormat(gl[shader], gl[type])
+		  document.write("rangeMin: " + format.rangeMin + "<br>");
+		  document.write("rangeMax: " + format.rangeMax + "<br>");
+		  document.write("precision: " + format.precision + "<br>");
+	  }
+	  shaders = ["VERTEX_SHADER", "FRAGMENT_SHADER"];
+	  types = ["HIGH_FLOAT", "MEDIUM_FLOAT", "LOW_FLOAT", "HIGH_INT", "MEDIUM_INT", "LOW_INT"];
+	  for (var i=0; i<shaders.length; i++) {
+		  for (var j=0; j<types.length; j++) {
+			  printPrecision(shaders[i], types[j]);
+		  }
+		  document.write("<br>");
+	  }
+} catch (e) {
+document.write("exception: " + e);
+}
+  </script>

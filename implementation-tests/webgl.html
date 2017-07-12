@@ -1,0 +1,13 @@
+<canvas></canvas>
+<script>
+var canvas = document.querySelectorAll("canvas")[0];
+var context = canvas.getContext('webgl', 
+    { 
+         failIfMajorPerformanceCaveat: true 
+    });
+if (context) {
+	document.write("fast webgl");
+} else {
+	document.write("slow webgl");
+}
+</script>

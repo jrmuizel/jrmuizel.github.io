@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+  div {
+    width:10px;
+    height:10px;
+    /*background-color:green;*/
+    display: inline-block;
+  }
+  .c { background-color: yellow; }
+</style>
+</head>
+<body id="body">
+</body>
+<script>
+
+var divCount = 20000;
+
+for (var i = 0; i < divCount; i++) {
+  var div = document.createElement("div");
+  div.id = i;
+  div.className = "c";
+  document.getElementById("body").appendChild(div);
+}
+var style = document.styleSheets[0].cssRules[1].style;
+var blue = true;
+function runFrame() {
+  if (blue)
+	  style.cssText = "background-color: blue;";
+  else
+	  style.cssText = "background-color: yellow;";
+  blue = !blue;
+
+  window.requestAnimationFrame(runFrame);
+}
+window.requestAnimationFrame(runFrame);
+</script>
+</html>

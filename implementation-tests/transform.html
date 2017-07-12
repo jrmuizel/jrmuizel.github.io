@@ -1,0 +1,12 @@
+<html>
+	<style>
+		#scaler {background: red; width: 400px;
+			transition: transform 2s; -webkit-transition: -webkit-transform 2s}
+		.in {transform: scale(4,4) translate(150px, 50px) translateZ(0); -webkit-transform: scale(4,4) translate(150px, 50px) translateZ(0);}
+		.out {transform: translateZ(0); -webkit-transform: translateZ(0)}
+	</style>
+	<div id=scaler class=in onclick="this.className=(this.className=='in' ? 'out' : 'in')">
+		<p>Regidle<p>
+		I was able to reproduce a rotating 3D cube in css using online examples. Now I am analysing the code so I learn the meaning of the code and understand how it works. However there is one thing i don't understand, I know that the "transition" property lets me add an effect when changing from one style to another. (for example changing the width of an element) But in the code that can be found here it's used in a way I don't understand.
+	</div>
+</html>

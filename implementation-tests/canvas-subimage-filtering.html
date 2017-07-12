@@ -1,0 +1,13 @@
+<html>
+	<canvas width=3 height=3 id=source></canvas>
+	<canvas width=100 height=100 id=dest></canvas>
+	<script>
+		c = document.getElementById("source").getContext("2d");
+		c.fillStyle = "red";
+		c.fillRect(0, 0, 3, 3);
+		c.fillStyle = "green";
+		c.fillRect(1, 1, 1, 1);
+
+		c = document.getElementById("dest").getContext("2d");
+		c.drawImage(document.getElementById("source"), 1, 1, 1, 1, 0, 0, 100, 100);
+	</script>

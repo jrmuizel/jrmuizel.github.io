@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script>
+			function draw() {
+				var canvas = document.getElementById('tutorial');
+				var ctx = canvas.getContext('2d');
+
+				ctx.strokeStyle = '#000';
+				ctx.lineWidth = 50;
+				ctx.moveTo(30, 50);
+				ctx.lineTo(580, 59);
+				ctx.stroke();
+			}
+		</script>
+		<style>
+			canvas { border:1px solid black;}
+		</style>
+	</head>
+	<body onload="draw()">
+		<canvas id="tutorial" width="550" height="550"></canvas>
+	</body>
+
+</html>

@@ -1,0 +1,8 @@
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script>
+window.onload = function() {
+	document.body.innerHTML = "failed";
+	ret = document.styleSheets[0].insertRule("#blanc { color: white }", 0);
+	document.body.innerHTML = "result " + ret;
+}
+</script>

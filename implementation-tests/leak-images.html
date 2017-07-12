@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<meta charset="utf-8">
+<title>Many images</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+
+function runAsContinuation(fun) {
+  function resumeContinuation(result) {
+    try { gen.next(result); }
+    catch (e) { if (!(e instanceof StopIteration)) { throw e; } }
+  }
+  var gen = fun(resumeContinuation);
+  resumeContinuation();
+}
+
+var cache = [];
+function addImageURL(url, callback) {
+  var img = document.getElementById("image");
+  cache.push(img.cloneNode());
+  img.src = url;
+  img.onload = callback;
+  img.onerror = callback;
+}
+
+function loadImages(json) {
+  var nextPageJSONPromise = $.getJSON("http://www.reddit.com/r/earthporn/.json?after=" + json.data.after);
+  var loadAllImagesPromise = new Promise(function (resolve, reject) {
+    runAsContinuation(function*(resumeContinuation) {
+      for (var i = 0; i < json.data.children.length; i++) {
+        var child = json.data.children[i];
+        var url = child.data.url;
+        if (url.substr(-4).toLowerCase() == ".jpg" ||
+            url.substr(-5).toLowerCase() == ".jpeg" ||
+            url.substr(-4).toLowerCase() == ".png" ||
+            url.substr(-4).toLowerCase() == ".gif") {
+          yield addImageURL(url, resumeContinuation);
+        }
+      }
+      resolve();
+    });
+  });
+  Promise.all([nextPageJSONPromise, loadAllImagesPromise]).then(function (vals) {
+    loadImages(vals[0]);
+  });
+}
+
+$.getJSON("http://www.reddit.com/r/earthporn/.json", loadImages);
+
+</script>
+
+<body style="margin:0; height: 100%;">
+
+<img id="image" style="width: 100%; height: 100%; object-fit: contain; background-color: black; display:block">
