@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div {
+      position: absolute;
+      border: 2px solid black;
+      transition: transform .2s;
+      cursor: pointer;
+    }
+    
+    div:hover {
+      transform: scale(2);
+    }
+  </style>
+</head>
+<body>
+  <script>
+    var numPoints = 5000;
+    var points = [];
+    
+    for (var i = 0; i < numPoints; ++i) {
+      var div = document.createElement('div');
+
+      var position = [
+        Math.floor(Math.random() * window.innerWidth),
+        Math.floor(Math.random() * window.innerHeight),
+      ];
+
+      var direction = [
+        Math.random() * 2 - 1,
+        Math.random() * 2 - 1,
+      ];
+      
+      var backgroundColour = [
+        Math.floor(Math.random() * 255),
+        Math.floor(Math.random() * 255),
+        Math.floor(Math.random() * 255)
+      ];
+      
+      var size = Math.round(Math.random() * 10);
+      var rounding = Math.round(Math.random() * size);
+      var borderWidth = Math.round(Math.random() * size/5);
+      
+      div.style.left = position[0] + "px";
+      div.style.top = position[1] + "px";
+      div.style.backgroundColor = "rgb(" +
+        backgroundColour[0] + ", " +
+        backgroundColour[1] + ", " +
+        backgroundColour[2]
+        + ")";
+      
+      div.style.width = size + 'px';
+      div.style.height = size + 'px';
+      div.style.borderRadius = 20 + 'px';
+      div.style.borderWidth = 5 + 'px';
+      
+      div.direction = direction;
+      div.position = position;
+      
+      points[i] = div;
+      
+      document.body.appendChild(div);
+    }
+    
+    setInterval(function () {
+      var div;
+      for (var i = 0; i < numPoints; ++i) {
+        div = points[i];
+        div.position[0] = div.position[0] + div.direction[0];
+        div.position[1] = div.position[1] + div.direction[1];
+        div.style.left = div.position[0] + "px";
+        div.style.top = div.position[1] + "px";
+      }
+    }, 50);
+  </script>
+</body>
+</html>
