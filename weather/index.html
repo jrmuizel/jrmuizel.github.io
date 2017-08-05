@@ -1,0 +1,54 @@
+<img id="i1">
+<img id="i2">
+<img id="i3">
+<script>
+        function pad(padString, str, length) {
+                var str = "" + str;
+                while (str.length < length)
+                        str = padString + str;
+                return str;
+        }
+        d = new Date();
+        console.log(d.getFullYear());
+        datestr = "" + d.getFullYear() + pad("0", d.getMonth()+1, 2) + pad("0", d.getDate(), 2);
+        console.log(datestr);
+        console.log("" + d.getDate());
+        time = Math.floor((d.getUTCHours() * 60 + d.getUTCMinutes() - 2 - 13) / 5) * 5 + 2;
+        hrstr = "" + pad("0", Math.floor(time / 60), 2) + pad("0", (time % 60), 2);
+        console.log("time" + time + " " + hrstr);
+        timestr = datestr + hrstr + "18";
+        console.log(timestr)
+        i1 = document.getElementById("i1");
+        i1.src = "http://rammb-slider.cira.colostate.edu//data/imagery/" + datestr + "/goes-16---conus/geocolor/" + timestr + "/03/002_005.png";
+        time -= 5;
+        hrstr = "" + pad("0", Math.floor(time / 60), 2) + pad("0", (time % 60), 2);
+        timestr = datestr + hrstr + "18";
+        i2 = document.getElementById("i2");
+        i2.src = "http://rammb-slider.cira.colostate.edu//data/imagery/" + datestr + "/goes-16---conus/geocolor/" + timestr + "/03/002_005.png";
+        time -= 5;
+        hrstr = "" + pad("0", Math.floor(time / 60), 2) + pad("0", (time % 60), 2);
+        timestr = datestr + hrstr + "18";
+        i3 = document.getElementById("i3");
+        i3.src = "http://rammb-slider.cira.colostate.edu//data/imagery/" + datestr + "/goes-16---conus/geocolor/" + timestr + "/03/002_005.png";
+        
+        let i = 0;
+        let m = [i3, i2, i1];
+
+        for (var j = 0; j < 14; j++) {
+        time -= 5;
+        hrstr = "" + pad("0", Math.floor(time / 60), 2) + pad("0", (time % 60), 2);
+        timestr = datestr + hrstr + "18";
+        let i3 = document.createElement("img");
+        i3.src = "http://rammb-slider.cira.colostate.edu//data/imagery/" + datestr + "/goes-16---conus/geocolor/" + timestr + "/03/002_005.png";
+        document.body.appendChild(i3);
+        m.unshift(i3);
+        }
+
+        setInterval(function () {
+                console.log(m[(i) % m.length].style.display);
+                m[(i + 1) % m.length].style.display = "block";
+                m[(i) % m.length].style.display = "none";
+                i += 1;
+        },
+        100);
+</script>
