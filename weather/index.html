@@ -19,9 +19,18 @@
         let m = [];
         let kind = "geocolor";
 
-        for (var j = 0; j < 15; j++) {
+        function reqListener () {
+                  console.log(this.responseText);
+          }
+/*
+          var oReq = new XMLHttpRequest();
+          oReq.addEventListener("load", reqListener);
+          oReq.open("GET", "http://rammb-slider.cira.colostate.edu/data/json/goes-16/conus/geocolor/latest_times.json");
+          oReq.send();
+*/
+        for (var j = 0; j < 45; j++) {
                 hrstr = "" + pad("0", Math.floor(time / 60), 2) + pad("0", (time % 60), 2);
-                timestr = datestr + hrstr + "18";
+                timestr = datestr + hrstr + "19";
                 let img1 = document.createElement("img");
                 img1.src = "http://rammb-slider.cira.colostate.edu//data/imagery/" + datestr + "/goes-16---conus/" + kind + "/" + timestr + "/03/001_005.png";
                 document.body.appendChild(img1);
@@ -30,6 +39,7 @@
                 document.body.appendChild(img2);
                 m.unshift([img1, img2]);
                 time -= 5;
+                console.log(timestr);
         }
 
         setInterval(function () {
@@ -39,5 +49,5 @@
                 m[(i) % m.length][1].style.display = "none";
                 i += 1;
         },
-        150);
+        32);
 </script>
