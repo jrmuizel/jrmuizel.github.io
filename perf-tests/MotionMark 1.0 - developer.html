@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <title>MotionMark 1.0 - developer</title>
+
+    <link rel="stylesheet" href="MotionMark%201.0%20-%20developer_files/animometer.css">
+    <link rel="stylesheet" href="MotionMark%201.0%20-%20developer_files/animometer_002.css">
+
+    <script src="MotionMark%201.0%20-%20developer_files/strings.js"></script>
+    <script src="MotionMark%201.0%20-%20developer_files/extensions.js"></script>
+    <script src="MotionMark%201.0%20-%20developer_files/statistics.js"></script>
+
+    <script src="MotionMark%201.0%20-%20developer_files/tests_002.js" charset="utf-8"></script>
+    <script src="MotionMark%201.0%20-%20developer_files/tests.js" charset="utf-8"></script>
+    <script src="MotionMark%201.0%20-%20developer_files/animometer.js"></script>
+    <script src="MotionMark%201.0%20-%20developer_files/animometer_002.js" charset="utf-8"></script>
+
+    <script src="MotionMark%201.0%20-%20developer_files/benchmark-runner.js"></script>
+    <script src="MotionMark%201.0%20-%20developer_files/d3.js"></script>
+    <script src="MotionMark%201.0%20-%20developer_files/graph.js" charset="utf-8"></script>
+</head>
+<body class="display-minimal tiles-big large showing-test-container" style="background-color: rgb(241, 241, 241);">
+    <main>
+        <section id="intro" class="">
+            <h1>MotionMark</h1>
+            <div class="body">
+                <div>
+                    <div id="suites">
+                        <h2>Suites:</h2>
+                        <ul class="tree"></ul>
+                        <div><span id="drop-target">Drop results here</span></div>
+                    </div>
+                    <div id="options">
+                        <h2>Options:</h2>
+                        <form name="benchmark-options">
+                            <ul>
+                                <li>
+                                    <label>Test length: <input id="test-interval" value="30" type="number"> seconds each</label>
+                                </li>
+                                <li>
+                                    <h3>Display:</h3>
+                                    <ul>
+                                        <li><label><input name="display" value="minimal" checked="checked" type="radio"> Minimal</label></li>
+                                        <li><label><input name="display" value="progress-bar" type="radio"> Progress bar</label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>Tiles:</h3>
+                                    <ul>
+                                        <li><label><input name="tiles" value="big" checked="checked" type="radio"> Big tiles</label></li>
+                                        <li><label><input name="tiles" value="classic" type="radio"> Classic tiles (512x512)</label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>Adjusting the test complexity:</h3>
+                                    <ul>
+                                        <li><label><input name="controller" value="fixed" type="radio"> Keep at a fixed complexity</label></li>
+                                        <li><label><input name="controller" value="step" type="radio"> Keep at a fixed complexity, then make a big step</label></li>
+                                        <li><label><input name="controller" value="adaptive" type="radio"> Maintain target FPS</label></li>
+                                        <li><label><input name="controller" value="ramp" checked="checked" type="radio"> Ramp</label></li>
+                                        <li><label><input name="controller" value="ramp30" type="radio"> Ramp @ 30fps</label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label>Target frame rate: <input id="frame-rate" value="50" type="number"> FPS</label>
+                                </li>
+                                <li>
+                                    <h3>Kalman filter estimated error:</h3>
+                                    <ul>
+                                        <li><label>Process error (Q): <input id="kalman-process-error" value="1" type="number"></label></li>
+                                        <li><label>Measurement error (R): <input id="kalman-measurement-error" value="4" type="number"></label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>Time measurement method:</h3>
+                                    <ul>
+                                        <li><label><input name="time-measurement" value="performance" checked="checked" type="radio"> <code>performance.now()</code> (if available)</label></li>
+                                        <li><label><input name="time-measurement" value="raf" type="radio"> <code>requestAnimationFrame()</code> timestamp</label></li>
+                                        <li><label><input name="time-measurement" value="date" type="radio"> <code>Date.now()</code></label></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+                <p>For accurate results, please take the browser window full screen, or rotate the device to landscape orientation.</p>
+                <div class="start-benchmark">
+                    <p class="hidden">Please rotate the device to orientation before starting.</p>
+                    <button id="run-benchmark" onclick="benchmarkController.startBenchmark()">Run benchmark</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="test-container" class="selected">
+            <div id="running-test" class="frame-container"><iframe scrolling="no" src="MotionMark%201.0%20-%20developer_files/bouncing-tagged-images.html"></iframe></div>
+            <div id="progress">
+                <div id="progress-completed" style="width: 0%;"></div>
+            </div>
+        </section>
+
+        <section id="results" class="">
+            <div class="body">
+                <h1>MotionMark score</h1>
+                <div class="detail">
+                    <span class="small">on a small screen (phone)</span>
+                    <span class="medium">on a medium screen (laptop, tablet)</span>
+                    <span class="large">on a large screen (desktop)</span>
+                </div>
+                <p class="score" onclick="benchmarkController.showDebugInfo()">2.00</p>
+                <p class="confidence">-50.00% / +171.28%</p>
+                <div id="results-tables" class="table-container">
+                    <div>
+                        <table id="results-score"><thead><tr><th>Score</th></tr></thead><tbody><tr><td class="suites-separator"></td></tr></tbody><tr><td class="">2.00</td></tr></table>
+                        <table id="results-data"><thead><tr><th></th><th colspan="4">80% Confidence Interval</th><th colspan="2">Time Complexity</th><th colspan="2">Raw Complexity</th></tr></thead><tbody><tr><td class="suites-separator"></td><td class="suites-separator"></td><td class="suites-separator"></td><td class="suites-separator"></td><td class="suites-separator"></td><td class="suites-separator"></td><td class="suites-separator"></td><td class="suites-separator"></td><td class="suites-separator"></td></tr></tbody><tr><td class=""><button class="small-button">Graph…</button></td><td class="right pad-left pad-right">1.00</td><td class="left"> - 5.43</td><td class="left pad-left small">-50.00%</td><td class="left pad-left small">+171.28%</td><td class="average">8.00</td><td class="stdev noisy-results">± 32.69%</td><td class="average">1.31</td><td class="stdev">± 16.25ms</td></tr></table>
+                    </div>
+                    <table id="results-header"><thead><tr><th><span onclick="benchmarkController.showDebugInfo()">Test Name</span></th></tr></thead><tbody><tr><td class="suites-separator"></td></tr></tbody><tr><td class="">CSS bouncing tagged images</td></tr></table>
+                </div>
+                <button onclick="benchmarkController.restartBenchmark()">Test Again</button>
+                <p>
+                    'j': Show JSON results<br>
+                    's': Select various results for copy/paste (use repeatedly to cycle)
+                </p>
+            </div>
+        </section>
+        <section id="test-graph">
+            <div class="body">
+                <header>
+                    <button onclick="benchmarkController.showResults()">&lt; Results</button>
+                    <h1>Graph:</h1>
+                    <p class="score"></p>
+                    <p class="confidence"></p>
+                </header>
+                <nav>
+                    <form name="graph-type">
+                        <ul>
+                            <li><label><input name="graph-type" value="time" type="radio"> Time graph</label></li>
+                            <li><label><input name="graph-type" value="complexity" checked="checked" type="radio"> Complexity graph</label></li>
+                        </ul>
+                    </form>
+                    <form name="time-graph-options">
+                        <ul>
+                            <li><label><input name="markers" checked="checked" type="checkbox"> Markers</label>
+                                <span>time: <span class="time"></span></span></li>
+                            <li><label><input name="averages" checked="checked" type="checkbox"> Averages</label></li>
+                            <li><label><input name="complexity" checked="checked" type="checkbox"> Complexity</label>
+                                <span class="complexity"></span></li>
+                            <li><label><input name="rawFPS" checked="checked" type="checkbox"> Raw FPS</label>
+                                <span class="rawFPS"></span></li>
+                            <li><label><input name="filteredFPS" checked="checked" type="checkbox"> Filtered FPS</label>
+                                <span class="filteredFPS"></span></li>
+                            <li><label><input name="regressions" checked="checked" type="checkbox"> Regressions</label></li>
+                        </ul>
+                    </form>
+                    <form name="complexity-graph-options">
+                        <ul class="series">
+                            <li><label><input name="series-raw" checked="checked" type="checkbox"> Series raw</label></li>
+                            <li><label><input name="series-average" type="checkbox"> Series average</label></li>
+                        </ul>
+                        <ul>
+                            <li><label><input name="regression-time-score" type="checkbox"> Controller score</label></li>
+                            <li><label><input name="bootstrap-score" checked="checked" type="checkbox"> Bootstrap score and histogram</label></li>
+                            <li><label><input name="complexity-regression-aggregate-raw" checked="checked" type="checkbox"> Regression, series raw</label><span id="complexity-regression-aggregate-raw"></span></li>
+                            <li><label><input name="complexity-regression-aggregate-average" type="checkbox"> Regression, series average</label><span id="complexity-regression-aggregate-average"></span></li>
+                        </ul>
+                    </form>
+                </nav>
+                <div id="test-graph-data"></div>
+            </div>
+        </section>
+    </main>
+
+
+</body></html>
