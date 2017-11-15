@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <title>MotionMark 1.0 - developer</title>
+
+    <link rel="stylesheet" href="blur-wrong_files/animometer.css">
+    <link rel="stylesheet" href="blur-wrong_files/animometer_002.css">
+
+    <script src="blur-wrong_files/strings.js"></script>
+    <script src="blur-wrong_files/extensions.js"></script>
+    <script src="blur-wrong_files/statistics.js"></script>
+
+    <script src="blur-wrong_files/tests_002.js" charset="utf-8"></script>
+    <script src="blur-wrong_files/tests.js" charset="utf-8"></script>
+    <script src="blur-wrong_files/animometer.js"></script>
+    <script src="blur-wrong_files/animometer_002.js" charset="utf-8"></script>
+
+    <script src="blur-wrong_files/benchmark-runner.js"></script>
+    <script src="blur-wrong_files/d3.js"></script>
+    <script src="blur-wrong_files/graph.js" charset="utf-8"></script>
+</head>
+<body class="medium showing-test-container display-minimal tiles-big" style="background-color: rgb(32, 26, 31);">
+    <main>
+        <section id="intro" class="">
+            <h1>MotionMark</h1>
+            <div class="body">
+                <div>
+                    <div id="suites">
+                        <h2>Suites:</h2>
+                        <ul class="tree"><li><input class="expand-button" id="suite-0" type="checkbox"><label class="tree-label" for="suite-0"><input type="checkbox"> Animometer</label><ul><li><label class="tree-label"><input type="checkbox"> Multiply </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas Arcs </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Leaves </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Paths </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas Lines </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Focus </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Images </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Design </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Suits </label> <span class="link">link</span><input class="selected" type="number"></li></ul></li><li><input class="expand-button" id="suite-1" type="checkbox"><label class="tree-label" for="suite-1"><input type="checkbox"> HTML suite</label><ul><li><label class="tree-label"><input type="checkbox"> CSS bouncing circles </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> CSS bouncing clipped rects </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> CSS bouncing gradient circles </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> CSS bouncing blend circles </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> CSS bouncing filter circles </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> CSS bouncing SVG images </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> CSS bouncing tagged images </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Leaves 2.0 </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Focus 2.0 </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> DOM particles, SVG masks </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Composited Transforms </label> <span class="link">link</span><input class="selected" type="number"></li></ul></li><li><input class="expand-button" id="suite-2" type="checkbox"><label class="tree-label" for="suite-2"><input type="checkbox"> Canvas suite</label><ul><li><label class="tree-label"><input type="checkbox"> canvas bouncing clipped rects </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> canvas bouncing gradient circles </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> canvas bouncing SVG images </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> canvas bouncing PNG images </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Stroke shapes </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Fill shapes </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas put/get image data </label> <span class="link">link</span><input class="selected" type="number"></li></ul></li><li><input class="expand-button" id="suite-3" type="checkbox"><label class="tree-label" for="suite-3"><input type="checkbox"> SVG suite</label><ul><li><label class="tree-label"><input type="checkbox"> SVG bouncing circles </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> SVG bouncing clipped rects </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> SVG bouncing gradient circles </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> SVG bouncing SVG images </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> SVG bouncing PNG images </label> <span class="link">link</span><input class="selected" type="number"></li></ul></li><li><input class="expand-button" id="suite-4" type="checkbox"><label class="tree-label" for="suite-4"><input type="checkbox"> 3D Graphics</label><ul><li><label class="tree-label"><input type="checkbox"> WebGL </label> <span class="link">link</span><input class="selected" type="number"></li></ul></li><li><input class="expand-button" id="suite-5" type="checkbox"><label class="tree-label" for="suite-5"><input type="checkbox"> Basic canvas path suite</label><ul><li><label class="tree-label"><input type="checkbox"> Canvas line segments, butt caps </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas line segments, round caps </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas line segments, square caps </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas line path, bevel join </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas line path, round join </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas line path, miter join </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas line path with dash pattern </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas quadratic segments </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas quadratic path </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas bezier segments </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas bezier path </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas arcTo segments </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas arc segments </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas rects </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas ellipses </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas line path, fill </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas quadratic path, fill </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas bezier path, fill </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas arcTo segments, fill </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas arc segments, fill </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas rects, fill </label> <span class="link">link</span><input class="selected" type="number"></li><li><label class="tree-label"><input type="checkbox"> Canvas ellipses, fill </label> <span class="link">link</span><input class="selected" type="number"></li></ul></li></ul>
+                        <div><span id="drop-target">Drop results here</span></div>
+                    </div>
+                    <div id="options">
+                        <h2>Options:</h2>
+                        <form name="benchmark-options">
+                            <ul>
+                                <li>
+                                    <label>Test length: <input id="test-interval" value="30" type="number"> seconds each</label>
+                                </li>
+                                <li>
+                                    <h3>Display:</h3>
+                                    <ul>
+                                        <li><label><input name="display" value="minimal" checked="checked" type="radio"> Minimal</label></li>
+                                        <li><label><input name="display" value="progress-bar" type="radio"> Progress bar</label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>Tiles:</h3>
+                                    <ul>
+                                        <li><label><input name="tiles" value="big" checked="checked" type="radio"> Big tiles</label></li>
+                                        <li><label><input name="tiles" value="classic" type="radio"> Classic tiles (512x512)</label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>Adjusting the test complexity:</h3>
+                                    <ul>
+                                        <li><label><input name="controller" value="fixed" checked="checked" type="radio"> Keep at a fixed complexity</label></li>
+                                        <li><label><input name="controller" value="step" type="radio"> Keep at a fixed complexity, then make a big step</label></li>
+                                        <li><label><input name="controller" value="adaptive" type="radio"> Maintain target FPS</label></li>
+                                        <li><label><input name="controller" value="ramp" type="radio"> Ramp</label></li>
+                                        <li><label><input name="controller" value="ramp30" type="radio"> Ramp @ 30fps</label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label>Target frame rate: <input id="frame-rate" value="50" type="number"> FPS</label>
+                                </li>
+                                <li>
+                                    <h3>Kalman filter estimated error:</h3>
+                                    <ul>
+                                        <li><label>Process error (Q): <input id="kalman-process-error" value="1" type="number"></label></li>
+                                        <li><label>Measurement error (R): <input id="kalman-measurement-error" value="4" type="number"></label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>Time measurement method:</h3>
+                                    <ul>
+                                        <li><label><input name="time-measurement" value="performance" checked="checked" type="radio"> <code>performance.now()</code> (if available)</label></li>
+                                        <li><label><input name="time-measurement" value="raf" type="radio"> <code>requestAnimationFrame()</code> timestamp</label></li>
+                                        <li><label><input name="time-measurement" value="date" type="radio"> <code>Date.now()</code></label></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+                <p>For accurate results, please take the browser window full screen, or rotate the device to landscape orientation.</p>
+                <div class="start-benchmark">
+                    <p class="hidden">Please rotate the device to orientation before starting.</p>
+                    <button id="run-benchmark" onclick="benchmarkController.startBenchmark()" disabled="disabled">Run benchmark</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="test-container" class="selected">
+            <div id="running-test" class="frame-container"><iframe scrolling="no" src="blur-wrong_files/focus.html"></iframe></div>
+            <div id="progress">
+                <div id="progress-completed" style="width: 0%;"></div>
+            </div>
+        </section>
+
+        <section id="results">
+            <div class="body">
+                <h1>MotionMark score</h1>
+                <div class="detail">
+                    <span class="small">on a small screen (phone)</span>
+                    <span class="medium">on a medium screen (laptop, tablet)</span>
+                    <span class="large">on a large screen (desktop)</span>
+                </div>
+                <p class="score" onclick="benchmarkController.showDebugInfo()"></p>
+                <p class="confidence"></p>
+                <div id="results-tables" class="table-container">
+                    <div>
+                        <table id="results-score"></table>
+                        <table id="results-data"></table>
+                    </div>
+                    <table id="results-header"></table>
+                </div>
+                <button onclick="benchmarkController.restartBenchmark()">Test Again</button>
+                <p>
+                    'j': Show JSON results<br>
+                    's': Select various results for copy/paste (use repeatedly to cycle)
+                </p>
+            </div>
+        </section>
+        <section id="test-graph">
+            <div class="body">
+                <header>
+                    <button onclick="benchmarkController.showResults()">&lt; Results</button>
+                    <h1>Graph:</h1>
+                    <p class="score"></p>
+                    <p class="confidence"></p>
+                </header>
+                <nav>
+                    <form name="graph-type">
+                        <ul>
+                            <li><label><input name="graph-type" value="time" type="radio"> Time graph</label></li>
+                            <li><label><input name="graph-type" value="complexity" checked="checked" type="radio"> Complexity graph</label></li>
+                        </ul>
+                    </form>
+                    <form name="time-graph-options">
+                        <ul>
+                            <li><label><input name="markers" checked="checked" type="checkbox"> Markers</label>
+                                <span>time: <span class="time"></span></span></li>
+                            <li><label><input name="averages" checked="checked" type="checkbox"> Averages</label></li>
+                            <li><label><input name="complexity" checked="checked" type="checkbox"> Complexity</label>
+                                <span class="complexity"></span></li>
+                            <li><label><input name="rawFPS" checked="checked" type="checkbox"> Raw FPS</label>
+                                <span class="rawFPS"></span></li>
+                            <li><label><input name="filteredFPS" checked="checked" type="checkbox"> Filtered FPS</label>
+                                <span class="filteredFPS"></span></li>
+                            <li><label><input name="regressions" checked="checked" type="checkbox"> Regressions</label></li>
+                        </ul>
+                    </form>
+                    <form name="complexity-graph-options">
+                        <ul class="series">
+                            <li><label><input name="series-raw" checked="checked" type="checkbox"> Series raw</label></li>
+                            <li><label><input name="series-average" type="checkbox"> Series average</label></li>
+                        </ul>
+                        <ul>
+                            <li><label><input name="regression-time-score" type="checkbox"> Controller score</label></li>
+                            <li><label><input name="bootstrap-score" checked="checked" type="checkbox"> Bootstrap score and histogram</label></li>
+                            <li><label><input name="complexity-regression-aggregate-raw" checked="checked" type="checkbox"> Regression, series raw</label><span id="complexity-regression-aggregate-raw"></span></li>
+                            <li><label><input name="complexity-regression-aggregate-average" type="checkbox"> Regression, series average</label><span id="complexity-regression-aggregate-average"></span></li>
+                        </ul>
+                    </form>
+                </nav>
+                <div id="test-graph-data"></div>
+            </div>
+        </section>
+    </main>
+
+
+</body></html>
