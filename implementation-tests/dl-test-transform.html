@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+  div {
+    width:10px;
+    height:10px;
+    background-color:green;
+    display: inline-block;
+    transform: rotate(0.5turn);
+  }
+</style>
+</head>
+<body id="body">
+</body>
+<script>
+
+var divCount = 20000;
+
+for (var i = 0; i < divCount; i++) {
+  var div = document.createElement("div");
+  div.id = i;
+  document.getElementById("body").appendChild(div);
+}
+
+var i = 0;
+function runFrame() {
+  if (document.getElementById(i).style.backgroundColor == "red") {
+    document.getElementById(i).style.backgroundColor = "green";
+  } else {
+    document.getElementById(i).style.backgroundColor = "red";
+  }
+  i++;
+  i = i%divCount;
+
+  window.requestAnimationFrame(runFrame);
+}
+window.requestAnimationFrame(runFrame);
+</script>
+</html>
