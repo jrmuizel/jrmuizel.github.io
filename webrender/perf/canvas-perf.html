@@ -1,0 +1,15 @@
+<canvas width=4000 height=4000>
+</canvas>
+<script>
+        window.onload = function() {
+                var red = false;
+                function draw() {
+                        var ctx = document.querySelectorAll("canvas")[0].getContext("2d");
+                        if (red) { ctx.fillStyle = "red"; } else { ctx.fillStyle = "yellow"; }
+                        ctx.fillRect(100, 200, 4000, 4000);
+                        red = !red;        
+                        requestAnimationFrame(draw);
+                }
+                requestAnimationFrame(draw);
+        }
+</script>
