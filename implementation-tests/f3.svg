@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2120" height="3925" viewBox="0 0 2120 3925">
+  <defs>
+    <symbol id="d" viewBox="-80 -53.9 160 107.7">
+      <rect fill="red" x="-89" y="-59.9" width="199" height="197.7" />
+    </symbol>
+  </defs>
+  <use xlink:href="#d" width="160" height="107.7" x="-80" y="-53.9" transform="matrix(4.344 2.684 2.684 -4.344 1343.905 445.116)" overflow="visible"/>
+</svg>

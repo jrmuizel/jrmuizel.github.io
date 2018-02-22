@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Scrolling over the transparent or the light green element should not scroll the scroll frame, scrolling over the dark green element should.</title>
+
+<style>
+
+body {
+  margin: 0;
+  height: 3000px;
+}
+
+.scrollbox {
+  border: 1px solid black;
+  margin: 50px;
+  width: 300px;
+  height: 400px;
+  overflow: auto;
+}
+
+.scrollable {
+  height: 2000px;
+  background: linear-gradient(red, blue);
+}
+
+.scrollable:hover {
+  height: 2000px;
+  background: linear-gradient(yellow, cyan);
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 300px;
+  width: 0px;
+  height: 200px;
+  z-index: 1;
+}
+
+.transparent-third {
+  width: 300px;
+  height: 60px;
+}
+
+.wide-third {
+  width: 250px;
+  height: 60px;
+  background: lime;
+}
+
+.narrow-third {
+  width: 100px;
+  height: 60px;
+  background: green;
+}
+
+</style>
+
+<div class="scrollbox">
+  <div class="scrollable"></div>
+</div>
+
+<div class="overlay">
+  <div class="transparent-third"></div>
+  <div class="wide-third"></div>
+  <div class="narrow-third"></div>
+</div>
+
+<script>
+  function spin() {
+      var start = Date.now();
+      while (Date.now() - start < 500);
+      setTimeout(spin, 0);
+}
+spin();
+</script>
+<img src="https://media.giphy.com/headers/2017-09-28-38-1506602331/Sticker_HomepageBanner_V3_1.gif">

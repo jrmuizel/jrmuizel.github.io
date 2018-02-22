@@ -1,0 +1,17 @@
+    <!DOCTYPE html>
+    <html>
+     <body style="height: 3000px; background-image: linear-gradient(green,red)">
+         Wheel over here is ok
+         <div style="position: absolute; left: 200px; top: 200px; width: 200px; will-change: transform; height: 200px; background-color: blue" onwheel="return false">
+             Wheel over here doesn't scroll
+         </div>
+ <script>
+  function spin() {
+      var start = Date.now();
+      while (Date.now() - start < 300);
+      setTimeout(spin, 0);
+}
+spin();
+</script>
+ </body>
+     </html> 
