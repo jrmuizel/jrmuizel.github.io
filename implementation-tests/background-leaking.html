@@ -1,5 +1,58 @@
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body>
+Chrome uses skia and GraphicsContext::DrawImage with Image::kClampImageToSourceRect.
+<pre>
+bool shouldUseSubimage = false;
+
+    // If the source rect is a subportion of the image, then we compute an inflated destination rect that will hold the entire image
+    // and then set a clip to the portion that we want to display.
+    FloatRect adjustedDestRect = destRect;
+
+    if (srcRect.size() != imageSize) {
+        CGInterpolationQuality interpolationQuality = CGContextGetInterpolationQuality(context);
+        // When the image is scaled using high-quality interpolation, we create a temporary CGImage
+        // containing only the portion we want to display. We need to do this because high-quality
+        // interpolation smoothes sharp edges, causing pixels from outside the source rect to bleed
+        // into the destination rect. See <rdar://problem/6112909>.
+        shouldUseSubimage = (interpolationQuality != kCGInterpolationNone) && (srcRect.size() != destRect.size() || !getCTM().isIdentityOrTranslationOrFlipped());
+        float xScale = srcRect.width() / destRect.width();
+        float yScale = srcRect.height() / destRect.height();
+        if (shouldUseSubimage) {
+            FloatRect subimageRect = srcRect;
+            float leftPadding = srcRect.x() - floorf(srcRect.x());
+            float topPadding = srcRect.y() - floorf(srcRect.y());
+
+            subimageRect.move(-leftPadding, -topPadding);
+            adjustedDestRect.move(-leftPadding / xScale, -topPadding / yScale);
+
+            subimageRect.setWidth(ceilf(subimageRect.width() + leftPadding));
+            adjustedDestRect.setWidth(subimageRect.width() / xScale);
+
+            subimageRect.setHeight(ceilf(subimageRect.height() + topPadding));
+            adjustedDestRect.setHeight(subimageRect.height() / yScale);
+
+#if CACHE_SUBIMAGES
+            subImage = subimageCache().getSubimage(subImage.get(), subimageRect);
+#else
+            subImage = adoptCF(CGImageCreateWithImageInRect(subImage.get(), subimageRect));
+#endif
+            if (currHeight < srcRect.maxY()) {
+                ASSERT(CGImageGetHeight(subImage.get()) == currHeight - CGRectIntegral(srcRect).origin.y);
+                adjustedDestRect.setHeight(CGImageGetHeight(subImage.get()) / yScale);
+            }
+        } else {
+            adjustedDestRect.setLocation(FloatPoint(destRect.x() - srcRect.x() / xScale, destRect.y() - srcRect.y() / yScale));
+            adjustedDestRect.setSize(FloatSize(imageSize.width() / xScale, imageSize.height() / yScale));
+        }
+
+        if (!destRect.contains(adjustedDestRect)) {
+            stateSaver.save();
+            CGContextClipToRect(context, destRect);
+        }
+    }
+
+
+</pre>
 Chrome and Safari apply a sampling restriction
 <div style="background: url(blue.png); width: 3px; height: 3px">&nbsp;</div><div style="background: url(yellow.png); width: 3px; height: 3px">&nbsp;</div>
 <div style="background: url(blue.png); width: 3px; height: 3px">&nbsp;</div><div style="background: url(yellow.png); width: 3px; height: 3px">&nbsp;</div>
