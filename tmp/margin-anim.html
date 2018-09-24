@@ -1,0 +1,19 @@
+<script>
+        var x = false;
+        var r = 40;
+        function f() {
+
+                document.getElementById("rim").style.marginLeft = r + "px";
+                r-=3;
+                if (r <= 0) {
+                        r = 40;
+                }
+                        
+                requestAnimationFrame(f);
+        }
+        onload = f;
+</script>
+
+<body>
+        <div id=rim style="width: 100px; height: 100px; background: blue"></div>
+</body>
