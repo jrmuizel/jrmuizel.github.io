@@ -1,0 +1,8 @@
+<canvas id=my-house width=100 height=50></canvas>
+<script>
+        ctx = document.getElementById('my-house').getContext('2d')
+        ctx.fillStyle = '#ff0'
+        ctx.fillRect(0, 0, 100, 50)
+        ctx.clearRect(0, 0, 100, 50)
+        ctx.getImageData(0, 0, 1, 1)
+</script>
