@@ -1,12 +1,12 @@
 <!doctype html>
-<iframe id=a src="http://192.168.0.1/"></iframe>
-<iframe id=b src="http://192.168.0.2/"></iframe>
+<iframe id=a src="https://192.168.0.1/"></iframe>
+<iframe id=b src="https://192.168.0.2/"></iframe>
 <script>
         elems = [document.getElementById("a"), document.getElementById("b")];
         i = 0;
         function f() {
                 console.log("blam", elems, i);
-                elems[i&1].src="http://192.168.0.1";
+                elems[i&1].src="https://192.168.0.1";
                 i = !i;
                 setTimeout(f, 1000);
         }
