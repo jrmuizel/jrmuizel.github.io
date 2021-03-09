@@ -1,0 +1,16 @@
+<script>
+        begin = performance.now();
+        const img = new Image();
+img.src = '50461976988_58f4680bb3_o.avif';
+img.decode()
+.then(() => {
+        document.body.appendChild(img);
+
+                end = performance.now();
+                result.innerHTML = ((end - begin)/1000) + "s"
+})
+.catch((encodingError) => {
+  // Do something with the error.
+})
+</script>
+<div id=result></div>
