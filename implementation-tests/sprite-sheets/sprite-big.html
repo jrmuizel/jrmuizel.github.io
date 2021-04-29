@@ -1,0 +1,18 @@
+<!-- A test to try determine if a browser renders each svg background separately -->
+<style>
+
+        div { display: inline-block; width: 50px; height: 50.11px; background: url("3dneon-svg.svg"); background-size: 6400%; }
+</style>
+<span>Animate</span>
+<script>
+        for (var i = 0; i < 100; i++) {
+                document.write("<div></div>");
+        }
+        which = true;
+        function s() {
+                document.querySelectorAll("span")[0].style.background = which ? "red" : "green";
+                which = !which;
+                requestAnimationFrame(s);
+        }
+        requestAnimationFrame(s);
+</script>
