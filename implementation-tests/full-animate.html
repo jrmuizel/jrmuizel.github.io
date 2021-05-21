@@ -1,0 +1,28 @@
+<style> div { position: absolute; top:0; bottom: 0; left: 0; right: 0; margin: auto }
+        #red { border-radius: 50%; background: red; height: 100%; width: 100% }
+        #blue { border-radius: 50%; background: blue; height: 50%; width: 50% }
+</style>
+
+<div id=red></div>
+<div id=blue></div>
+<script>
+        var red = document.getElementById("red");
+        var blue = document.getElementById("blue");
+        var scale = 100;
+        var color = 255;
+        function animate() {
+                blue.style.width = "" + scale + "%"
+                blue.style.height = "" + scale + "%"
+                red.style.background = "rgb(" + color + ", 255, 0)";
+                scale -= 1;
+                color -= 1;
+                if (scale < 0) {
+                        scale = 100;
+                }
+                if (color < 0) {
+                        color = 255;
+                }
+                requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate)
+</script>
