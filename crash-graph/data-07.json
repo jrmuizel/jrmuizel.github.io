@@ -624,15 +624,15 @@
 "version": "89.0"
 },
 {
-"uuid": "7933b703-fee3-4cb3-94de-897b70210607",
-"date": "2021-06-07T01:15:52.424815+00:00",
+"uuid": "caa6d81b-8774-4414-bb83-b007e0210607",
+"date": "2021-06-07T01:16:26.028414+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "caa6d81b-8774-4414-bb83-b007e0210607",
-"date": "2021-06-07T01:16:26.028414+00:00",
+"uuid": "7933b703-fee3-4cb3-94de-897b70210607",
+"date": "2021-06-07T01:15:52.424815+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -841,16 +841,16 @@
 "version": "89.0"
 },
 {
-"uuid": "d853ed19-2361-47f3-a726-9f9560210607",
-"date": "2021-06-07T10:46:33.390174+00:00",
-"signature": "sse41::lowp::gather_8888",
+"uuid": "02534700-1e28-4c03-9842-c5f530210607",
+"date": "2021-06-07T10:46:53.603866+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "02534700-1e28-4c03-9842-c5f530210607",
-"date": "2021-06-07T10:46:53.603866+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
+"uuid": "d853ed19-2361-47f3-a726-9f9560210607",
+"date": "2021-06-07T10:46:33.390174+00:00",
+"signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -918,6 +918,27 @@
 "version": "89.0"
 },
 {
+"uuid": "a1ac03e0-cc84-4b1b-b64d-abbce0210607",
+"date": "2021-06-07T14:32:48.547978+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "a4fc4159-fd48-425d-90f2-4076f0210607",
+"date": "2021-06-07T14:44:43.470190+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "5ed32ab9-c828-4ef1-83bc-a0e420210607",
+"date": "2021-06-07T15:04:00.313670+00:00",
+"signature": "Sprite_D8_S32::blitRect",
+"product": "Firefox",
+"version": "89.0"
+},
+{
 "uuid": "8b6f4b25-3a72-4b96-854a-3b1e20210607",
 "date": "2021-06-07T14:19:09.599889+00:00",
 "signature": "sse41::lowp::gather_8888",
@@ -932,23 +953,9 @@
 "version": "89.0"
 },
 {
-"uuid": "a1ac03e0-cc84-4b1b-b64d-abbce0210607",
-"date": "2021-06-07T14:32:48.547978+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
 "uuid": "88da3cb7-a249-4167-9f7c-d94710210607",
 "date": "2021-06-07T14:37:48.208649+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "a4fc4159-fd48-425d-90f2-4076f0210607",
-"date": "2021-06-07T14:44:43.470190+00:00",
-"signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -960,44 +967,9 @@
 "version": "89.0"
 },
 {
-"uuid": "5ed32ab9-c828-4ef1-83bc-a0e420210607",
-"date": "2021-06-07T15:04:00.313670+00:00",
-"signature": "Sprite_D8_S32::blitRect",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "a0505eac-247d-44e7-bfc5-188c10210607",
-"date": "2021-06-07T18:44:48.576869+00:00",
+"uuid": "33246ca5-dfb2-4b67-885e-0655b0210607",
+"date": "2021-06-07T15:14:58.027443+00:00",
 "signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "e7804913-b3ff-4312-98a8-a3a6e0210607",
-"date": "2021-06-07T19:48:03.643760+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "be25cb18-d06b-464b-a10c-c3aee0210607",
-"date": "2021-06-07T19:05:01.411333+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "1a40947f-1a3a-4155-93fc-580dc0210607",
-"date": "2021-06-07T22:38:11.727352+00:00",
-"signature": "Sprite_D8_S32::blitRect",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "8263a05f-3f60-4468-a39a-2a4f30210607",
-"date": "2021-06-07T23:19:58.113775+00:00",
-"signature": "sse2::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -1011,13 +983,6 @@
 {
 "uuid": "95d9219e-5946-49de-ba8e-5d9ac0210607",
 "date": "2021-06-07T16:23:31.222107+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "6172af89-a00e-4575-95e8-dfe4e0210607",
-"date": "2021-06-07T16:24:27.584874+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -1037,9 +1002,23 @@
 "version": "89.0"
 },
 {
-"uuid": "33246ca5-dfb2-4b67-885e-0655b0210607",
-"date": "2021-06-07T15:14:58.027443+00:00",
+"uuid": "6172af89-a00e-4575-95e8-dfe4e0210607",
+"date": "2021-06-07T16:24:27.584874+00:00",
 "signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "be25cb18-d06b-464b-a10c-c3aee0210607",
+"date": "2021-06-07T19:05:01.411333+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "e7804913-b3ff-4312-98a8-a3a6e0210607",
+"date": "2021-06-07T19:48:03.643760+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -1051,9 +1030,58 @@
 "version": "89.0"
 },
 {
-"uuid": "7de15f38-e574-4869-a7f5-940b50210607",
-"date": "2021-06-07T20:33:59.821662+00:00",
+"uuid": "8263a05f-3f60-4468-a39a-2a4f30210607",
+"date": "2021-06-07T23:19:58.113775+00:00",
+"signature": "sse2::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "2a9f575c-968f-4a6d-ae23-58ed10210607",
+"date": "2021-06-07T17:29:57.293953+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "c4168bbc-dbfa-4b48-8b3f-672420210607",
+"date": "2021-06-07T17:37:12.298592+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "76336b9f-c395-4607-8ede-4ee290210607",
+"date": "2021-06-07T17:43:14.647511+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "978f6149-1fac-4c5a-a629-d189f0210607",
+"date": "2021-06-07T17:55:32.026316+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "1bbbe5d9-b469-42b1-b7a2-78d8a0210607",
+"date": "2021-06-07T17:12:53.677424+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "090da351-9e05-43e5-b049-fa3060210607",
+"date": "2021-06-07T18:39:07.499972+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "a0505eac-247d-44e7-bfc5-188c10210607",
+"date": "2021-06-07T18:44:48.576869+00:00",
+"signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -1065,9 +1093,23 @@
 "version": "89.0"
 },
 {
-"uuid": "2743a43e-a661-4d7d-aebe-56c760210607",
-"date": "2021-06-07T20:55:24.758499+00:00",
+"uuid": "5c3211a7-96cb-495b-b149-06f410210607",
+"date": "2021-06-07T21:50:49.547246+00:00",
 "signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "ebbe6a35-e5ad-403d-8c19-9f96f0210607",
+"date": "2021-06-07T22:24:05.186035+00:00",
+"signature": "sse2::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "1a40947f-1a3a-4155-93fc-580dc0210607",
+"date": "2021-06-07T22:38:11.727352+00:00",
+"signature": "Sprite_D8_S32::blitRect",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -1107,8 +1149,15 @@
 "version": "89.0"
 },
 {
-"uuid": "5c3211a7-96cb-495b-b149-06f410210607",
-"date": "2021-06-07T21:50:49.547246+00:00",
+"uuid": "7de15f38-e574-4869-a7f5-940b50210607",
+"date": "2021-06-07T20:33:59.821662+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "2743a43e-a661-4d7d-aebe-56c760210607",
+"date": "2021-06-07T20:55:24.758499+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -1117,55 +1166,6 @@
 "uuid": "e9fab24a-f7bc-4453-bcc4-780f90210607",
 "date": "2021-06-07T22:10:47.235141+00:00",
 "signature": "Sprite_D8_S32::blitRect",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "ebbe6a35-e5ad-403d-8c19-9f96f0210607",
-"date": "2021-06-07T22:24:05.186035+00:00",
-"signature": "sse2::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "978f6149-1fac-4c5a-a629-d189f0210607",
-"date": "2021-06-07T17:55:32.026316+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "1bbbe5d9-b469-42b1-b7a2-78d8a0210607",
-"date": "2021-06-07T17:12:53.677424+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "76336b9f-c395-4607-8ede-4ee290210607",
-"date": "2021-06-07T17:43:14.647511+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "2a9f575c-968f-4a6d-ae23-58ed10210607",
-"date": "2021-06-07T17:29:57.293953+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "c4168bbc-dbfa-4b48-8b3f-672420210607",
-"date": "2021-06-07T17:37:12.298592+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "090da351-9e05-43e5-b049-fa3060210607",
-"date": "2021-06-07T18:39:07.499972+00:00",
-"signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -1548,36 +1548,8 @@
 "version": "89.0"
 },
 {
-"uuid": "cc06f1a3-0436-4392-80c6-eb4870210607",
-"date": "2021-06-07T15:25:01.865670+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "9e7fbd57-9b8a-4664-8892-dacc00210607",
-"date": "2021-06-07T15:26:35.590107+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "2a16dbb6-565c-4110-bcd6-596450210607",
-"date": "2021-06-07T15:29:03.908320+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "498f762d-a390-4418-b864-a45d10210607",
-"date": "2021-06-07T16:24:27.772223+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "09ce0067-1937-4ea1-a8c1-34ad50210607",
-"date": "2021-06-07T16:24:27.387472+00:00",
+"uuid": "59867c61-6d77-4cd2-9daf-065ec0210607",
+"date": "2021-06-07T13:51:17.409250+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -1586,20 +1558,6 @@
 "uuid": "60c299ad-54f7-493f-b16c-f98190210607",
 "date": "2021-06-07T13:52:09.866410+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "c871fc65-8ff6-4f08-b55f-140500210607",
-"date": "2021-06-07T15:03:57.814956+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "59867c61-6d77-4cd2-9daf-065ec0210607",
-"date": "2021-06-07T13:51:17.409250+00:00",
-"signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -1614,6 +1572,13 @@
 "uuid": "0db0f3cc-32bd-4a56-a181-21e860210607",
 "date": "2021-06-07T14:59:31.815011+00:00",
 "signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "c871fc65-8ff6-4f08-b55f-140500210607",
+"date": "2021-06-07T15:03:57.814956+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -1639,9 +1604,58 @@
 "version": "89.0"
 },
 {
+"uuid": "086e304f-a3ad-4f11-9cdf-53fa90210607",
+"date": "2021-06-07T23:02:42.255963+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "f5d405da-b91a-487f-9227-959be0210607",
+"date": "2021-06-07T23:09:00.115631+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
 "uuid": "9d230408-47b0-44ea-aa96-4cc740210607",
 "date": "2021-06-07T23:59:47.872735+00:00",
 "signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "cc06f1a3-0436-4392-80c6-eb4870210607",
+"date": "2021-06-07T15:25:01.865670+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "9e7fbd57-9b8a-4664-8892-dacc00210607",
+"date": "2021-06-07T15:26:35.590107+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "09ce0067-1937-4ea1-a8c1-34ad50210607",
+"date": "2021-06-07T16:24:27.387472+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "498f762d-a390-4418-b864-a45d10210607",
+"date": "2021-06-07T16:24:27.772223+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "2a16dbb6-565c-4110-bcd6-596450210607",
+"date": "2021-06-07T15:29:03.908320+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -1651,6 +1665,13 @@
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0rc2"
+},
+{
+"uuid": "1bea1732-caa8-4cc8-b5b6-f1eba0210607",
+"date": "2021-06-07T18:04:07.118658+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
 },
 {
 "uuid": "06b6a701-e6c3-4bea-b78f-852690210607",
@@ -1667,30 +1688,9 @@
 "version": "89.0"
 },
 {
-"uuid": "1bea1732-caa8-4cc8-b5b6-f1eba0210607",
-"date": "2021-06-07T18:04:07.118658+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
 "uuid": "812383d1-c379-4f14-9a8a-4eb7c0210607",
 "date": "2021-06-07T18:06:21.897614+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "a2457c6f-a85c-46e7-a748-1f8ef0210607",
-"date": "2021-06-07T21:02:59.617137+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "086e304f-a3ad-4f11-9cdf-53fa90210607",
-"date": "2021-06-07T23:02:42.255963+00:00",
-"signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -1716,8 +1716,8 @@
 "version": "89.0"
 },
 {
-"uuid": "f5d405da-b91a-487f-9227-959be0210607",
-"date": "2021-06-07T23:09:00.115631+00:00",
+"uuid": "a2457c6f-a85c-46e7-a748-1f8ef0210607",
+"date": "2021-06-07T21:02:59.617137+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -2668,34 +2668,6 @@
 "version": "89.0"
 },
 {
-"uuid": "1141a130-f2e6-409d-8185-5a1f40210607",
-"date": "2021-06-07T19:28:18.965083+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "880b8c37-e757-4a73-ab0d-377cd0210607",
-"date": "2021-06-07T19:32:07.227268+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "6c28c633-fe21-40b4-8f76-5cea40210607",
-"date": "2021-06-07T19:40:19.221575+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "8ed6715f-20b0-4a9c-9b6c-ef4610210607",
-"date": "2021-06-07T19:51:35.008983+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
 "uuid": "214ecd57-ad2b-43f5-8c46-362520210607",
 "date": "2021-06-07T19:04:43.552295+00:00",
 "signature": "sse41::lowp::gather_8888",
@@ -2717,8 +2689,22 @@
 "version": "89.0"
 },
 {
-"uuid": "b855d31d-15b9-4d57-a7ed-7ea570210607",
-"date": "2021-06-07T19:53:54.148363+00:00",
+"uuid": "1141a130-f2e6-409d-8185-5a1f40210607",
+"date": "2021-06-07T19:28:18.965083+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "880b8c37-e757-4a73-ab0d-377cd0210607",
+"date": "2021-06-07T19:32:07.227268+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "6c28c633-fe21-40b4-8f76-5cea40210607",
+"date": "2021-06-07T19:40:19.221575+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -2759,41 +2745,6 @@
 "version": "89.0"
 },
 {
-"uuid": "7d3ed36d-d8b3-46e9-8dec-baffc0210607",
-"date": "2021-06-07T16:45:11.507816+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "f081bb8b-2d81-4026-b9f7-54d130210607",
-"date": "2021-06-07T16:11:22.664878+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "4052da2c-170d-4781-94d1-4e0c60210607",
-"date": "2021-06-07T15:23:02.111009+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "4b640e88-c14b-4273-845c-b45470210607",
-"date": "2021-06-07T15:55:46.501020+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "cb3ea590-1237-42d4-bd6f-4b9960210607",
-"date": "2021-06-07T17:01:47.243993+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
 "uuid": "13f3a6fa-e696-40e5-9a0d-f47b90210607",
 "date": "2021-06-07T16:25:05.584171+00:00",
 "signature": "sse2::lowp::gather_8888",
@@ -2808,9 +2759,58 @@
 "version": "89.0"
 },
 {
+"uuid": "7d3ed36d-d8b3-46e9-8dec-baffc0210607",
+"date": "2021-06-07T16:45:11.507816+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "4052da2c-170d-4781-94d1-4e0c60210607",
+"date": "2021-06-07T15:23:02.111009+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "f081bb8b-2d81-4026-b9f7-54d130210607",
+"date": "2021-06-07T16:11:22.664878+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "cb3ea590-1237-42d4-bd6f-4b9960210607",
+"date": "2021-06-07T17:01:47.243993+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "4b640e88-c14b-4273-845c-b45470210607",
+"date": "2021-06-07T15:55:46.501020+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
 "uuid": "aa8d9ad1-c370-4f33-990f-bff560210607",
 "date": "2021-06-07T16:49:49.534799+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "8ed6715f-20b0-4a9c-9b6c-ef4610210607",
+"date": "2021-06-07T19:51:35.008983+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "b855d31d-15b9-4d57-a7ed-7ea570210607",
+"date": "2021-06-07T19:53:54.148363+00:00",
+"signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -2850,16 +2850,16 @@
 "version": "89.0"
 },
 {
-"uuid": "5d1b3961-f8f1-4a7d-ace5-a68930210607",
-"date": "2021-06-07T17:50:25.508649+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
+"uuid": "897d7ea9-2a07-40aa-afa6-364200210607",
+"date": "2021-06-07T17:34:49.378592+00:00",
+"signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "897d7ea9-2a07-40aa-afa6-364200210607",
-"date": "2021-06-07T17:34:49.378592+00:00",
-"signature": "sse41::lowp::gather_8888",
+"uuid": "5d1b3961-f8f1-4a7d-ace5-a68930210607",
+"date": "2021-06-07T17:50:25.508649+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -2997,111 +2997,6 @@
 "version": "89.0"
 },
 {
-"uuid": "6707731d-5e65-46b7-b1c1-1f9370210607",
-"date": "2021-06-07T06:58:34.610422+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "af2a0cc7-21d1-4c16-92f1-4db1f0210607",
-"date": "2021-06-07T07:03:49.981779+00:00",
-"signature": "Sprite_D8_S32::blitRect",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "3d8764d5-0cfd-4257-9db2-ce2290210607",
-"date": "2021-06-07T07:06:22.031833+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "124d90fe-12ea-413a-a93c-898c50210607",
-"date": "2021-06-07T07:44:58.615393+00:00",
-"signature": "sse2::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "d7762cdc-57a7-4243-b377-ba9440210607",
-"date": "2021-06-07T07:13:38.529831+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "4c8be2a4-90f4-4f3b-934f-537460210607",
-"date": "2021-06-07T07:15:19.943303+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "77a0d208-f9d3-4154-b288-f78570210607",
-"date": "2021-06-07T07:27:33.900734+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "ae3487c8-640e-4f1c-aa58-0f4610210607",
-"date": "2021-06-07T08:29:50.212891+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0rc2"
-},
-{
-"uuid": "b3f641d7-d911-4ab6-86f2-9c0da0210607",
-"date": "2021-06-07T08:42:17.197789+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "698643ed-78bf-4fab-ac3a-f17d90210607",
-"date": "2021-06-07T08:53:19.732057+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "acf17a51-13f6-410a-90b6-f3e260210607",
-"date": "2021-06-07T09:27:10.559756+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "79b7eca6-ccb2-4f4f-a6df-259b50210607",
-"date": "2021-06-07T09:32:26.630937+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "d784f7e0-ee08-44cd-864a-d08f10210607",
-"date": "2021-06-07T09:40:03.644325+00:00",
-"signature": "Sprite_D8_S32::blitRect",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "300f6943-3014-47bf-aeba-ac88a0210607",
-"date": "2021-06-07T09:50:18.046902+00:00",
-"signature": "Sprite_D8_S32::blitRect",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "0f43e5eb-f0af-4fc3-8776-f5a5b0210607",
-"date": "2021-06-07T10:26:29.932074+00:00",
-"signature": "sse2::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
 "uuid": "e78b73c2-ce02-4b1e-8fa6-47e790210607",
 "date": "2021-06-07T10:33:44.872997+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
@@ -3221,114 +3116,107 @@
 "version": "89.0"
 },
 {
-"uuid": "47df1e20-fdb9-4c30-b96a-1ed4b0210607",
-"date": "2021-06-07T15:24:44.262342+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "12aed72e-87a2-43c6-9c70-4ff750210607",
-"date": "2021-06-07T16:00:32.957592+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "3e62f2d3-6900-4ef2-b563-448980210607",
-"date": "2021-06-07T15:24:18.574143+00:00",
+"uuid": "d7762cdc-57a7-4243-b377-ba9440210607",
+"date": "2021-06-07T07:13:38.529831+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "53a071c8-4e46-42e0-838c-1641b0210607",
-"date": "2021-06-07T16:44:29.009186+00:00",
+"uuid": "4c8be2a4-90f4-4f3b-934f-537460210607",
+"date": "2021-06-07T07:15:19.943303+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "ad9f121b-5b30-4af6-a13a-574d70210607",
-"date": "2021-06-07T16:15:24.928833+00:00",
+"uuid": "77a0d208-f9d3-4154-b288-f78570210607",
+"date": "2021-06-07T07:27:33.900734+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "81075bfc-e5e4-4368-9c33-85b3d0210607",
-"date": "2021-06-07T16:24:25.209556+00:00",
-"signature": "sse41::lowp::gather_8888",
+"uuid": "124d90fe-12ea-413a-a93c-898c50210607",
+"date": "2021-06-07T07:44:58.615393+00:00",
+"signature": "sse2::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "e83d2c81-0b3d-478e-9b01-cddb80210607",
-"date": "2021-06-07T16:30:55.412842+00:00",
+"uuid": "6707731d-5e65-46b7-b1c1-1f9370210607",
+"date": "2021-06-07T06:58:34.610422+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "671b9801-e542-460e-ba8a-3c44c0210607",
-"date": "2021-06-07T14:09:39.071502+00:00",
-"signature": "sse41::lowp::gather_8888",
+"uuid": "af2a0cc7-21d1-4c16-92f1-4db1f0210607",
+"date": "2021-06-07T07:03:49.981779+00:00",
+"signature": "Sprite_D8_S32::blitRect",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "5f74ba9d-9460-4b4c-a9f5-cd0ac0210607",
-"date": "2021-06-07T14:17:45.608100+00:00",
-"signature": "sse2::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "bf3172bc-0eb6-419d-989e-128fa0210607",
-"date": "2021-06-07T14:20:33.341894+00:00",
+"uuid": "3d8764d5-0cfd-4257-9db2-ce2290210607",
+"date": "2021-06-07T07:06:22.031833+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "3dec4aec-f720-41e6-a733-861420210607",
-"date": "2021-06-07T14:20:33.547420+00:00",
+"uuid": "ae3487c8-640e-4f1c-aa58-0f4610210607",
+"date": "2021-06-07T08:29:50.212891+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
-"version": "89.0"
+"version": "89.0rc2"
 },
 {
-"uuid": "a44f6ead-be65-48d8-b0d8-decf50210607",
-"date": "2021-06-07T14:30:41.520179+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "941275ac-c4c4-4c52-b6ca-959d10210607",
-"date": "2021-06-07T15:08:00.775469+00:00",
+"uuid": "b3f641d7-d911-4ab6-86f2-9c0da0210607",
+"date": "2021-06-07T08:42:17.197789+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "9113e664-41cf-42ae-848e-da3220210607",
-"date": "2021-06-07T14:27:52.103831+00:00",
+"uuid": "698643ed-78bf-4fab-ac3a-f17d90210607",
+"date": "2021-06-07T08:53:19.732057+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "7670056e-fd9b-44ff-9b9c-8429e0210607",
-"date": "2021-06-07T14:31:29.844531+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "6a9d3123-7bdf-4de8-aa6b-c10500210607",
-"date": "2021-06-07T14:59:54.725552+00:00",
+"uuid": "acf17a51-13f6-410a-90b6-f3e260210607",
+"date": "2021-06-07T09:27:10.559756+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "79b7eca6-ccb2-4f4f-a6df-259b50210607",
+"date": "2021-06-07T09:32:26.630937+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "d784f7e0-ee08-44cd-864a-d08f10210607",
+"date": "2021-06-07T09:40:03.644325+00:00",
+"signature": "Sprite_D8_S32::blitRect",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "300f6943-3014-47bf-aeba-ac88a0210607",
+"date": "2021-06-07T09:50:18.046902+00:00",
+"signature": "Sprite_D8_S32::blitRect",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "0f43e5eb-f0af-4fc3-8776-f5a5b0210607",
+"date": "2021-06-07T10:26:29.932074+00:00",
+"signature": "sse2::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -3347,8 +3235,85 @@
 "version": "89.0"
 },
 {
+"uuid": "671b9801-e542-460e-ba8a-3c44c0210607",
+"date": "2021-06-07T14:09:39.071502+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "5f74ba9d-9460-4b4c-a9f5-cd0ac0210607",
+"date": "2021-06-07T14:17:45.608100+00:00",
+"signature": "sse2::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "3dec4aec-f720-41e6-a733-861420210607",
+"date": "2021-06-07T14:20:33.547420+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "bf3172bc-0eb6-419d-989e-128fa0210607",
+"date": "2021-06-07T14:20:33.341894+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "9113e664-41cf-42ae-848e-da3220210607",
+"date": "2021-06-07T14:27:52.103831+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "a44f6ead-be65-48d8-b0d8-decf50210607",
+"date": "2021-06-07T14:30:41.520179+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "7670056e-fd9b-44ff-9b9c-8429e0210607",
+"date": "2021-06-07T14:31:29.844531+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
 "uuid": "59bc6a59-7b4b-4422-9e41-ab9240210607",
 "date": "2021-06-07T14:47:32.848623+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "6a9d3123-7bdf-4de8-aa6b-c10500210607",
+"date": "2021-06-07T14:59:54.725552+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "941275ac-c4c4-4c52-b6ca-959d10210607",
+"date": "2021-06-07T15:08:00.775469+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "50c9a2fe-a07f-4f6e-91ed-a5c640210607",
+"date": "2021-06-07T19:05:02.979385+00:00",
+"signature": "sse2::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "ad6da27f-d0c9-4df4-9f80-b99a30210607",
+"date": "2021-06-07T19:13:17.738945+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -3382,29 +3347,106 @@
 "version": "89.0"
 },
 {
-"uuid": "26582964-bf67-4e23-8d4f-988000210607",
-"date": "2021-06-07T20:32:25.395174+00:00",
+"uuid": "7de18b21-7179-44f1-9dd2-b12050210607",
+"date": "2021-06-07T23:09:46.118335+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "ce2131c3-e99f-4b5e-9063-064260210607",
-"date": "2021-06-07T17:27:53.830413+00:00",
-"signature": "sse2::lowp::bilerp_clamp_8888",
+"uuid": "32708d0d-dbe5-4f2f-b71b-9721c0210607",
+"date": "2021-06-07T23:18:45.785658+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "31caa0ac-a998-4bf9-a8e4-77c8d0210607",
-"date": "2021-06-07T17:43:40.805449+00:00",
+"uuid": "5ce7bb22-4f4b-4366-842c-5a7410210607",
+"date": "2021-06-07T23:20:23.922425+00:00",
 "signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "ad9f121b-5b30-4af6-a13a-574d70210607",
+"date": "2021-06-07T16:15:24.928833+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "81075bfc-e5e4-4368-9c33-85b3d0210607",
+"date": "2021-06-07T16:24:25.209556+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "e83d2c81-0b3d-478e-9b01-cddb80210607",
+"date": "2021-06-07T16:30:55.412842+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "47df1e20-fdb9-4c30-b96a-1ed4b0210607",
+"date": "2021-06-07T15:24:44.262342+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "3e62f2d3-6900-4ef2-b563-448980210607",
+"date": "2021-06-07T15:24:18.574143+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "12aed72e-87a2-43c6-9c70-4ff750210607",
+"date": "2021-06-07T16:00:32.957592+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "53a071c8-4e46-42e0-838c-1641b0210607",
+"date": "2021-06-07T16:44:29.009186+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
 "uuid": "e812c7c9-5c07-4278-9786-4d2680210607",
 "date": "2021-06-07T17:18:08.640354+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "031d8e82-c7fa-4cc7-92f2-7e5bc0210607",
+"date": "2021-06-07T18:46:31.493688+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "a0245e35-c9bf-4b15-828a-819a90210607",
+"date": "2021-06-07T18:51:32.359629+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "917b78bd-c799-4330-bd5d-fe49e0210607",
+"date": "2021-06-07T18:53:01.026435+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "31caa0ac-a998-4bf9-a8e4-77c8d0210607",
+"date": "2021-06-07T17:43:40.805449+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -3424,16 +3466,16 @@
 "version": "89.0"
 },
 {
-"uuid": "2b9c69e3-bacb-4a39-8c1b-936c10210607",
-"date": "2021-06-07T18:43:01.660466+00:00",
-"signature": "sse41::lowp::gather_8888",
+"uuid": "ce2131c3-e99f-4b5e-9063-064260210607",
+"date": "2021-06-07T17:27:53.830413+00:00",
+"signature": "sse2::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "031d8e82-c7fa-4cc7-92f2-7e5bc0210607",
-"date": "2021-06-07T18:46:31.493688+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
+"uuid": "2b9c69e3-bacb-4a39-8c1b-936c10210607",
+"date": "2021-06-07T18:43:01.660466+00:00",
+"signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -3445,78 +3487,15 @@
 "version": "89.0"
 },
 {
-"uuid": "a0245e35-c9bf-4b15-828a-819a90210607",
-"date": "2021-06-07T18:51:32.359629+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "917b78bd-c799-4330-bd5d-fe49e0210607",
-"date": "2021-06-07T18:53:01.026435+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "50c9a2fe-a07f-4f6e-91ed-a5c640210607",
-"date": "2021-06-07T19:05:02.979385+00:00",
-"signature": "sse2::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "ad6da27f-d0c9-4df4-9f80-b99a30210607",
-"date": "2021-06-07T19:13:17.738945+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "a36455d3-fbeb-452c-8fdb-63cac0210607",
-"date": "2021-06-07T21:22:08.739586+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "18abbc13-c39b-47aa-93ad-2327d0210607",
-"date": "2021-06-07T21:28:40.619290+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "119d896b-4572-428b-9778-79d070210607",
-"date": "2021-06-07T22:21:09.661921+00:00",
-"signature": "sse2::lowp::gather_8888",
+"uuid": "26582964-bf67-4e23-8d4f-988000210607",
+"date": "2021-06-07T20:32:25.395174+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
 "uuid": "17028bc1-0a05-4540-aed5-093400210607",
 "date": "2021-06-07T20:47:08.102855+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "b0825d32-7835-40df-a874-934c40210607",
-"date": "2021-06-07T21:45:24.615952+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "7de18b21-7179-44f1-9dd2-b12050210607",
-"date": "2021-06-07T23:09:46.118335+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "5ce7bb22-4f4b-4366-842c-5a7410210607",
-"date": "2021-06-07T23:20:23.922425+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -3536,9 +3515,30 @@
 "version": "89.0"
 },
 {
-"uuid": "32708d0d-dbe5-4f2f-b71b-9721c0210607",
-"date": "2021-06-07T23:18:45.785658+00:00",
+"uuid": "a36455d3-fbeb-452c-8fdb-63cac0210607",
+"date": "2021-06-07T21:22:08.739586+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "18abbc13-c39b-47aa-93ad-2327d0210607",
+"date": "2021-06-07T21:28:40.619290+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "b0825d32-7835-40df-a874-934c40210607",
+"date": "2021-06-07T21:45:24.615952+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "119d896b-4572-428b-9778-79d070210607",
+"date": "2021-06-07T22:21:09.661921+00:00",
+"signature": "sse2::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -3550,16 +3550,16 @@
 "version": "89.0"
 },
 {
-"uuid": "fb940b2c-f31f-4a4a-bed5-00e4f0210607",
-"date": "2021-06-07T02:45:00.390521+00:00",
-"signature": "sse2::lowp::gather_8888",
+"uuid": "3e9bd949-76fc-4b6f-9db8-d43b60210607",
+"date": "2021-06-07T02:45:47.722449+00:00",
+"signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "3e9bd949-76fc-4b6f-9db8-d43b60210607",
-"date": "2021-06-07T02:45:47.722449+00:00",
-"signature": "sse41::lowp::gather_8888",
+"uuid": "fb940b2c-f31f-4a4a-bed5-00e4f0210607",
+"date": "2021-06-07T02:45:00.390521+00:00",
+"signature": "sse2::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -3641,6 +3641,13 @@
 "version": "89.0rc2"
 },
 {
+"uuid": "01d348fc-9b2f-482d-ba31-0c0a00210607",
+"date": "2021-06-07T07:35:34.210132+00:00",
+"signature": "sse2::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
 "uuid": "1b84c7e2-2d65-4666-8858-c97170210607",
 "date": "2021-06-07T06:55:39.132520+00:00",
 "signature": "sse41::lowp::gather_8888",
@@ -3658,13 +3665,6 @@
 "uuid": "4ea1a6e6-c64d-4cfb-8216-2a2820210607",
 "date": "2021-06-07T07:47:24.077786+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "01d348fc-9b2f-482d-ba31-0c0a00210607",
-"date": "2021-06-07T07:35:34.210132+00:00",
-"signature": "sse2::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -3802,11 +3802,67 @@
 "version": "89.0"
 },
 {
+"uuid": "6d306118-072a-41a2-a741-1e44e0210607",
+"date": "2021-06-07T15:23:44.465477+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "f67fddb7-c32b-42f9-9297-8de040210607",
+"date": "2021-06-07T15:24:45.710140+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "61f2fbb6-fa12-4ee8-a259-4b0960210607",
+"date": "2021-06-07T16:24:23.914311+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "f0f70851-0db0-4e86-89dc-e613f0210607",
+"date": "2021-06-07T16:06:35.415541+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "f5342185-ffef-40c8-bb6a-11ddd0210607",
+"date": "2021-06-07T16:27:40.834068+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
 "uuid": "cc58a80f-5a03-409a-8f56-48d7b0210607",
 "date": "2021-06-07T14:08:20.087229+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0rc2"
+},
+{
+"uuid": "e8122555-db3b-4751-bcf9-545770210607",
+"date": "2021-06-07T14:45:16.455152+00:00",
+"signature": "sse2::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "dee9eba6-e23c-4f94-b6ea-916590210607",
+"date": "2021-06-07T14:47:03.022966+00:00",
+"signature": "Sprite_D8_S32::blitRect",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "3429d066-9153-42bf-a073-c9b190210607",
+"date": "2021-06-07T14:49:47.743880+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
 },
 {
 "uuid": "7b73c1ae-ef50-49ec-aefb-02f250210607",
@@ -3837,29 +3893,29 @@
 "version": "89.0"
 },
 {
-"uuid": "e8122555-db3b-4751-bcf9-545770210607",
-"date": "2021-06-07T14:45:16.455152+00:00",
-"signature": "sse2::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "dee9eba6-e23c-4f94-b6ea-916590210607",
-"date": "2021-06-07T14:47:03.022966+00:00",
+"uuid": "075edcb7-23e2-4071-b7e8-4cb3f0210607",
+"date": "2021-06-07T15:06:42.248780+00:00",
 "signature": "Sprite_D8_S32::blitRect",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "3429d066-9153-42bf-a073-c9b190210607",
-"date": "2021-06-07T14:49:47.743880+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
 "uuid": "610e6753-2033-4cb1-85b6-e72830210607",
 "date": "2021-06-07T18:47:13.432658+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "00fb7fb0-6878-4348-93c4-8cddd0210607",
+"date": "2021-06-07T18:49:11.883396+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "cc5366ee-6cdf-4185-bd9f-3175a0210607",
+"date": "2021-06-07T19:09:42.169128+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -3886,20 +3942,6 @@
 "version": "89.0"
 },
 {
-"uuid": "00fb7fb0-6878-4348-93c4-8cddd0210607",
-"date": "2021-06-07T18:49:11.883396+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "cc5366ee-6cdf-4185-bd9f-3175a0210607",
-"date": "2021-06-07T19:09:42.169128+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
 "uuid": "27c17466-aeb1-4087-a141-793a20210607",
 "date": "2021-06-07T19:31:07.077244+00:00",
 "signature": "sse41::lowp::gather_8888",
@@ -3907,78 +3949,15 @@
 "version": "89.0"
 },
 {
-"uuid": "ac21250c-34f9-46a3-b455-5d7040210607",
-"date": "2021-06-07T22:07:06.239918+00:00",
-"signature": "Sprite_D8_S32::blitRect",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "42c1f465-663f-4638-9e0e-8798a0210607",
-"date": "2021-06-07T22:08:59.836087+00:00",
-"signature": "Sprite_D8_S32::blitRect",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "9eb85fb5-710a-421e-bb3b-8c1e40210607",
-"date": "2021-06-07T22:10:14.804363+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
+"uuid": "7dc9c997-b79b-49be-871d-c0af40210607",
+"date": "2021-06-07T19:46:19.802101+00:00",
+"signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
 "uuid": "50e0d1fb-f565-423e-9b19-b79890210607",
 "date": "2021-06-07T23:00:50.672971+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "f0f70851-0db0-4e86-89dc-e613f0210607",
-"date": "2021-06-07T16:06:35.415541+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "075edcb7-23e2-4071-b7e8-4cb3f0210607",
-"date": "2021-06-07T15:06:42.248780+00:00",
-"signature": "Sprite_D8_S32::blitRect",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "f67fddb7-c32b-42f9-9297-8de040210607",
-"date": "2021-06-07T15:24:45.710140+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "c20cea16-76df-441f-9ef3-f5b680210607",
-"date": "2021-06-07T16:41:59.578157+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "61f2fbb6-fa12-4ee8-a259-4b0960210607",
-"date": "2021-06-07T16:24:23.914311+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "f5342185-ffef-40c8-bb6a-11ddd0210607",
-"date": "2021-06-07T16:27:40.834068+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "6d306118-072a-41a2-a741-1e44e0210607",
-"date": "2021-06-07T15:23:44.465477+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -3998,6 +3977,27 @@
 "version": "89.0"
 },
 {
+"uuid": "65ffaaba-f31e-4d23-86c0-a09600210607",
+"date": "2021-06-07T17:18:44.636985+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "c20cea16-76df-441f-9ef3-f5b680210607",
+"date": "2021-06-07T16:41:59.578157+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "a1613baf-0c39-4792-affd-ce9b10210607",
+"date": "2021-06-07T17:44:14.138835+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
 "uuid": "ee233b0e-abd0-4605-abed-f91370210607",
 "date": "2021-06-07T17:57:44.528179+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
@@ -4012,57 +4012,8 @@
 "version": "89.0"
 },
 {
-"uuid": "65ffaaba-f31e-4d23-86c0-a09600210607",
-"date": "2021-06-07T17:18:44.636985+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "a1613baf-0c39-4792-affd-ce9b10210607",
-"date": "2021-06-07T17:44:14.138835+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "7dc9c997-b79b-49be-871d-c0af40210607",
-"date": "2021-06-07T19:46:19.802101+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
 "uuid": "bc6d4768-b69b-41de-846e-234530210607",
 "date": "2021-06-07T20:28:17.679126+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "476b34c4-33f8-408d-9c5c-511690210607",
-"date": "2021-06-07T20:29:14.519467+00:00",
-"signature": "Sprite_D8_S32::blitRect",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "95e713ae-0b5a-4da4-8472-c53860210607",
-"date": "2021-06-07T20:52:42.498213+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "ffec1c8c-325b-4644-ae80-e42d30210607",
-"date": "2021-06-07T21:20:30.447744+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "d4b41cdb-7371-4300-aae6-c44130210607",
-"date": "2021-06-07T21:30:40.566846+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -4075,8 +4026,57 @@
 "version": "89.0"
 },
 {
+"uuid": "ac21250c-34f9-46a3-b455-5d7040210607",
+"date": "2021-06-07T22:07:06.239918+00:00",
+"signature": "Sprite_D8_S32::blitRect",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "9eb85fb5-710a-421e-bb3b-8c1e40210607",
+"date": "2021-06-07T22:10:14.804363+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "95e713ae-0b5a-4da4-8472-c53860210607",
+"date": "2021-06-07T20:52:42.498213+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "d4b41cdb-7371-4300-aae6-c44130210607",
+"date": "2021-06-07T21:30:40.566846+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
 "uuid": "aa70bf37-4b56-4568-975e-489d50210607",
 "date": "2021-06-07T21:39:50.911645+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "42c1f465-663f-4638-9e0e-8798a0210607",
+"date": "2021-06-07T22:08:59.836087+00:00",
+"signature": "Sprite_D8_S32::blitRect",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "476b34c4-33f8-408d-9c5c-511690210607",
+"date": "2021-06-07T20:29:14.519467+00:00",
+"signature": "Sprite_D8_S32::blitRect",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "ffec1c8c-325b-4644-ae80-e42d30210607",
+"date": "2021-06-07T21:20:30.447744+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -4187,111 +4187,6 @@
 "version": "89.0"
 },
 {
-"uuid": "0624b0fd-ba0b-4815-a449-bd8d10210607",
-"date": "2021-06-07T06:54:13.820270+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "b54eaa12-829a-4465-b6f5-23a7f0210607",
-"date": "2021-06-07T07:02:21.328871+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0rc2"
-},
-{
-"uuid": "806ba492-fad5-423f-9e52-956530210607",
-"date": "2021-06-07T07:03:35.399318+00:00",
-"signature": "Sprite_D8_S32::blitRect",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "960f564a-27dc-4401-b64e-1c1e70210607",
-"date": "2021-06-07T07:21:50.608623+00:00",
-"signature": "sse2::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "cd28a196-74fd-403f-8c46-118360210607",
-"date": "2021-06-07T07:47:24.876068+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "7e191ed8-07e5-4556-aa90-a610f0210607",
-"date": "2021-06-07T08:02:06.312802+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "29f25a0b-f3ce-4157-a004-c40100210607",
-"date": "2021-06-07T08:09:22.779361+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "ac1368b3-e832-4c2e-b5e2-5c2430210607",
-"date": "2021-06-07T08:14:23.529491+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "837f736f-89ac-4639-a245-e5d120210607",
-"date": "2021-06-07T08:27:54.584195+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "5bb59a37-34d5-46e8-ae53-805fb0210607",
-"date": "2021-06-07T08:39:43.807282+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "e2d7e6bd-2621-4abc-9b8e-f92250210607",
-"date": "2021-06-07T09:01:14.502508+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "9c387f81-cdc0-44d0-a617-8ae9c0210607",
-"date": "2021-06-07T09:13:13.714199+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "e4a85a8c-8b8f-493e-9ed1-7c8360210607",
-"date": "2021-06-07T09:32:56.709846+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "679b3d08-da59-47d8-9988-5f6280210607",
-"date": "2021-06-07T09:43:35.476669+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "1ad7d5ee-609d-47a2-9f55-8b7e20210607",
-"date": "2021-06-07T10:09:12.224855+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
 "uuid": "359be428-5133-44c8-a82d-4b6420210607",
 "date": "2021-06-07T10:24:05.459253+00:00",
 "signature": "sse41::lowp::gather_8888",
@@ -4390,6 +4285,13 @@
 "version": "89.0"
 },
 {
+"uuid": "49d69c9d-1dd8-45a8-8efc-32de90210607",
+"date": "2021-06-07T13:39:48.473102+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
 "uuid": "1427a724-9f4e-4f6c-9727-aae650210607",
 "date": "2021-06-07T13:40:25.031911+00:00",
 "signature": "sse41::lowp::gather_8888",
@@ -4397,9 +4299,107 @@
 "version": "89.0"
 },
 {
-"uuid": "49d69c9d-1dd8-45a8-8efc-32de90210607",
-"date": "2021-06-07T13:39:48.473102+00:00",
+"uuid": "960f564a-27dc-4401-b64e-1c1e70210607",
+"date": "2021-06-07T07:21:50.608623+00:00",
+"signature": "sse2::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "0624b0fd-ba0b-4815-a449-bd8d10210607",
+"date": "2021-06-07T06:54:13.820270+00:00",
 "signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "b54eaa12-829a-4465-b6f5-23a7f0210607",
+"date": "2021-06-07T07:02:21.328871+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0rc2"
+},
+{
+"uuid": "806ba492-fad5-423f-9e52-956530210607",
+"date": "2021-06-07T07:03:35.399318+00:00",
+"signature": "Sprite_D8_S32::blitRect",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "cd28a196-74fd-403f-8c46-118360210607",
+"date": "2021-06-07T07:47:24.876068+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "7e191ed8-07e5-4556-aa90-a610f0210607",
+"date": "2021-06-07T08:02:06.312802+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "29f25a0b-f3ce-4157-a004-c40100210607",
+"date": "2021-06-07T08:09:22.779361+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "ac1368b3-e832-4c2e-b5e2-5c2430210607",
+"date": "2021-06-07T08:14:23.529491+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "837f736f-89ac-4639-a245-e5d120210607",
+"date": "2021-06-07T08:27:54.584195+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "5bb59a37-34d5-46e8-ae53-805fb0210607",
+"date": "2021-06-07T08:39:43.807282+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "e2d7e6bd-2621-4abc-9b8e-f92250210607",
+"date": "2021-06-07T09:01:14.502508+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "9c387f81-cdc0-44d0-a617-8ae9c0210607",
+"date": "2021-06-07T09:13:13.714199+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "e4a85a8c-8b8f-493e-9ed1-7c8360210607",
+"date": "2021-06-07T09:32:56.709846+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "679b3d08-da59-47d8-9988-5f6280210607",
+"date": "2021-06-07T09:43:35.476669+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "1ad7d5ee-609d-47a2-9f55-8b7e20210607",
+"date": "2021-06-07T10:09:12.224855+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -4467,13 +4467,6 @@
 "version": "89.0"
 },
 {
-"uuid": "3bbd7ffa-4c9c-49ea-a020-0c9110210607",
-"date": "2021-06-07T19:33:17.725648+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
 "uuid": "6e258073-6868-4351-814a-8054d0210607",
 "date": "2021-06-07T19:03:44.934028+00:00",
 "signature": "sse41::lowp::gather_8888",
@@ -4498,6 +4491,13 @@
 "uuid": "b31d20d6-2c4b-4db7-a06b-9d5140210607",
 "date": "2021-06-07T19:31:03.536108+00:00",
 "signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "3bbd7ffa-4c9c-49ea-a020-0c9110210607",
+"date": "2021-06-07T19:33:17.725648+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
@@ -4544,13 +4544,6 @@
 "version": "89.0"
 },
 {
-"uuid": "c452b395-afda-4ff7-811e-116430210607",
-"date": "2021-06-07T15:08:10.314253+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
 "uuid": "783cc1c1-5dca-4189-8348-5ed7f0210607",
 "date": "2021-06-07T15:28:52.847480+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
@@ -4558,22 +4551,15 @@
 "version": "89.0"
 },
 {
-"uuid": "d581cbcd-f7d1-447f-acef-f8af70210607",
-"date": "2021-06-07T15:30:35.466321+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
+"uuid": "3e798b23-9937-479b-9b4d-9c65e0210607",
+"date": "2021-06-07T15:50:49.767579+00:00",
+"signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
 "uuid": "e1e9e203-4704-46aa-b298-835060210607",
 "date": "2021-06-07T16:24:23.062873+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "9e73e2a1-32d3-4a8e-b14a-6d8c20210607",
-"date": "2021-06-07T16:57:44.004722+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -4586,15 +4572,15 @@
 "version": "89.0"
 },
 {
-"uuid": "028a1801-d779-41f4-9ec6-260220210607",
-"date": "2021-06-07T15:46:13.734623+00:00",
-"signature": "sse41::lowp::gather_8888",
+"uuid": "d581cbcd-f7d1-447f-acef-f8af70210607",
+"date": "2021-06-07T15:30:35.466321+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
 },
 {
-"uuid": "3e798b23-9937-479b-9b4d-9c65e0210607",
-"date": "2021-06-07T15:50:49.767579+00:00",
+"uuid": "9e73e2a1-32d3-4a8e-b14a-6d8c20210607",
+"date": "2021-06-07T16:57:44.004722+00:00",
 "signature": "sse41::lowp::gather_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -4602,6 +4588,34 @@
 {
 "uuid": "56eeb307-4860-4b27-8552-efca10210607",
 "date": "2021-06-07T16:09:21.118375+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "c452b395-afda-4ff7-811e-116430210607",
+"date": "2021-06-07T15:08:10.314253+00:00",
+"signature": "sse41::lowp::bilerp_clamp_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "028a1801-d779-41f4-9ec6-260220210607",
+"date": "2021-06-07T15:46:13.734623+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "ac6f7791-0c65-4f01-9838-deeed0210607",
+"date": "2021-06-07T17:52:18.076273+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "a87c84fc-961b-409d-98bd-5aa6a0210607",
+"date": "2021-06-07T17:52:25.209150+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"
@@ -4616,20 +4630,6 @@
 {
 "uuid": "c5fb09fd-c1b5-4f11-aef3-e4a050210607",
 "date": "2021-06-07T18:13:50.149610+00:00",
-"signature": "sse41::lowp::bilerp_clamp_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "ac6f7791-0c65-4f01-9838-deeed0210607",
-"date": "2021-06-07T17:52:18.076273+00:00",
-"signature": "sse41::lowp::gather_8888",
-"product": "Firefox",
-"version": "89.0"
-},
-{
-"uuid": "a87c84fc-961b-409d-98bd-5aa6a0210607",
-"date": "2021-06-07T17:52:25.209150+00:00",
 "signature": "sse41::lowp::bilerp_clamp_8888",
 "product": "Firefox",
 "version": "89.0"

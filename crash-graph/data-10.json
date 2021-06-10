@@ -1,0 +1,49 @@
+{
+"hits": [
+{
+"uuid": "56d8315f-d8cb-4293-a9ee-47d880210610",
+"date": "2021-06-10T00:38:15.365204+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "c155121e-66d7-4a94-990e-fc1000210610",
+"date": "2021-06-10T01:40:24.363183+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "ef8885d3-6b71-47b3-a237-04d610210610",
+"date": "2021-06-10T01:36:37.547536+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "16036c45-a29d-4de6-a15e-4c11c0210610",
+"date": "2021-06-10T02:24:55.283042+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+},
+{
+"uuid": "e3b57437-f669-4134-9d3c-8f4b70210610",
+"date": "2021-06-10T00:37:59.234838+00:00",
+"signature": "sse41::lowp::gather_8888",
+"product": "Firefox",
+"version": "89.0"
+}
+],
+"total": 5,
+"facets": {
+"signature": [
+{
+"term": "sse41::lowp::gather_8888",
+"count": 5
+}
+]
+},
+"errors": []
+}

@@ -16,7 +16,7 @@
                 return new Date(Math.round(date.getTime() / p) * p);
         }
         async function get() {
-                sources = ["data-07.json", "data-08.json", "data-09.json"]
+                sources = ["data-07.json", "data-08.json", "data-09.json", "data-10.json"]
                 // https://crash-stats.mozilla.org/api/SuperSearch/?signature=~Sprite_D8_S32%3A%3AblitRect&signature=~sse2%3A%3Alowp%3A%3Abilerp_clamp_8888&signature=~sse2%3A%3Alowp%3A%3Agather_8888&signature=~sse41%3A%3Alowp%3A%3Abilerp_clamp_8888&signature=~sse41%3A%3Alowp%3A%3Agather_8888&date=%3E%3D2021-06-08&date=%3C%3D2021-06-10&_results_number=1000
                 hist = {};
                 for (const s of sources) {
