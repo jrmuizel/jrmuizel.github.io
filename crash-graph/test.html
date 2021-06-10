@@ -1,0 +1,53 @@
+<head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
+        <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/2.15.6/metricsgraphics.css" rel='stylesheet' type='text/css' id="dark">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/2.15.6/metricsgraphics.js"></script>
+</head>
+<div id=chart></div>
+<script>
+        function roundToHour(date) {
+                p = 60 * 60 * 1000; // milliseconds in an hour
+                return new Date(Math.round(date.getTime() / p) * p);
+        }
+        async function get() {
+                sources = ["data-07.json", "data-08.json", "data-09.json"]
+                // https://crash-stats.mozilla.org/api/SuperSearch/?signature=~Sprite_D8_S32%3A%3AblitRect&signature=~sse2%3A%3Alowp%3A%3Abilerp_clamp_8888&signature=~sse2%3A%3Alowp%3A%3Agather_8888&signature=~sse41%3A%3Alowp%3A%3Abilerp_clamp_8888&signature=~sse41%3A%3Alowp%3A%3Agather_8888&date=%3E%3D2021-06-08&date=%3C%3D2021-06-10&_results_number=1000
+                hist = {};
+                for (const s of sources) {
+                        let response = await fetch(s);
+                        let json = await response.json();
+                        console.log(json.hits);
+                        for (const i of json.hits) {
+                                var date = new Date(i.date);
+                                date = roundToHour(date);
+                                if (date in hist) {
+                                        hist[date] += 1;
+                                } else {
+                                        hist[date] = 1;
+                                }
+                        }
+                }
+                data = []
+                for (const [key, value] of Object.entries(hist)) {
+                        data.push({ "date": new Date(key), "count": value });
+                }
+                MG.data_graphic({
+                        title: "Crashes",
+                        description: "Crashes of a bunch of signatures",
+                        data: data,
+                        markers: [{ 'date': new Date("June 8 2021 7:45 PM EDT"), 'label': 'Blocklist pushed' }],
+                        width: 800,
+                        height: 400,
+                        target: "#chart",
+                        x_accessor: "date",
+                        y_accessor: "count",
+                });
+        }
+        get();
+</script>
