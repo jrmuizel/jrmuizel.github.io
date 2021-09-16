@@ -1,0 +1,96 @@
+<style>
+        @keyframes spinnow {
+                100% {
+                        transform: rotate(360deg);
+                }
+        }
+        svg { will-change: transform;
+                opacity: 30%;
+    animation: 5s spinnow infinite linear;
+
+        }
+</style>
+<svg height="800px" style="position:absolute" width="800px" viewbox="0 0 200 200">
+<circle cx="150" cy="150" r="20" fill="red" />
+</svg>
+<svg height="800px" style="position:absolute; top: 100px" width="800px" viewbox="0 0 200 200">
+<circle cx="10" cy="150" r="20" fill="blue" />
+</svg>
+<svg height="800px" style="position:absolute; top: 150px" width="800px" viewbox="0 0 200 200">
+<circle cx="150" cy="150" r="20" fill="red" />
+</svg>
+<svg height="800px" style="position:absolute; top: 200px" width="800px" viewbox="0 0 200 200">
+<circle cx="10" cy="150" r="20" fill="blue" />
+</svg>
+
+<svg height="800px" style="position:absolute; left: 100px" width="800px" viewbox="0 0 200 200">
+<circle cx="150" cy="150" r="20" fill="red" />
+</svg>
+<svg height="800px" style="position:absolute; left: 100px; top: 100px" width="800px" viewbox="0 0 200 200">
+<circle cx="10" cy="150" r="20" fill="blue" />
+</svg>
+<svg height="800px" style="position:absolute; left: 100px; top: 150px" width="800px" viewbox="0 0 200 200">
+<circle cx="150" cy="150" r="20" fill="red" />
+</svg>
+<svg height="800px" style="position:absolute; left: 100px; top: 200px" width="800px" viewbox="0 0 200 200">
+<circle cx="10" cy="150" r="20" fill="blue" />
+</svg>
+
+<svg height="800px" style="position:absolute; left: 200px" width="800px" viewbox="0 0 200 200">
+<circle cx="150" cy="150" r="20" fill="red" />
+</svg>
+<svg height="800px" style="position:absolute; left: 200px; top: 100px" width="800px" viewbox="0 0 200 200">
+<circle cx="10" cy="150" r="20" fill="blue" />
+</svg>
+<svg height="800px" style="position:absolute; left: 200px; top: 150px" width="800px" viewbox="0 0 200 200">
+<circle cx="150" cy="150" r="20" fill="red" />
+</svg>
+<svg height="800px" style="position:absolute; left: 200px; top: 200px" width="800px" viewbox="0 0 200 200">
+<circle cx="10" cy="150" r="20" fill="blue" />
+</svg>
+
+<svg height="800px" style="position:absolute; left: 300px" width="800px" viewbox="0 0 200 200">
+<circle cx="150" cy="150" r="20" fill="red" />
+</svg>
+<svg height="800px" style="position:absolute; left: 300px; top: 100px" width="800px" viewbox="0 0 200 200">
+<circle cx="10" cy="150" r="20" fill="blue" />
+</svg>
+<svg height="800px" style="position:absolute; left: 300px; top: 150px" width="800px" viewbox="0 0 200 200">
+<circle cx="150" cy="150" r="20" fill="red" />
+</svg>
+<svg height="800px" style="position:absolute; left: 300px; top: 200px" width="800px" viewbox="0 0 200 200">
+<circle cx="10" cy="150" r="20" fill="blue" />
+</svg>
+<svg height="800px" style="position:absolute; left: 400px" width="800px" viewbox="0 0 200 200">
+<circle cx="150" cy="150" r="20" fill="red" />
+</svg>
+<svg height="800px" style="position:absolute; left: 400px; top: 100px" width="800px" viewbox="0 0 200 200">
+<circle cx="10" cy="150" r="20" fill="blue" />
+</svg>
+<svg height="800px" style="position:absolute; left: 400px; top: 150px" width="800px" viewbox="0 0 200 200">
+<circle cx="150" cy="150" r="20" fill="red" />
+</svg>
+<svg height="800px" style="position:absolute; left: 400px; top: 200px" width="800px" viewbox="0 0 200 200">
+<circle cx="10" cy="150" r="20" fill="blue" />
+</svg>
+
+
+
+<script>
+var x = 0;
+function draw() {
+        x++;
+        circles = document.querySelectorAll("circle");
+        svgs = document.querySelectorAll("svg");
+        c_count = 1;
+        for (c of circles) {
+
+                c.setAttribute("r", x);
+                c_count++;
+        }
+requestAnimationFrame(draw);
+if (x > 140) { x = 100; }
+}
+requestAnimationFrame(draw);
+</script>
+
